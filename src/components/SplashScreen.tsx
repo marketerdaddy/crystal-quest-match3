@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { useGame } from '../context/GameContext';
 import { Sound } from '../game/audio';
+import { CrystalLogo } from './CrystalLogo';
 
 const CRYSTAL_COLORS = [
   '#ef4444', '#3b82f6', '#22c55e', '#a855f7', '#eab308', '#06b6d4'
@@ -166,9 +167,7 @@ export const SplashScreen: React.FC = () => {
             className="absolute inset-0 rounded-full bg-cyan-400/20 blur-xl"
             style={{ animation: 'pulse-glow 2s ease-in-out infinite' }}
           />
-          <img
-            src="/crystal.svg"
-            alt="Crystal Quest"
+          <CrystalLogo
             className="w-24 h-24 relative z-10"
             style={{
               filter: 'drop-shadow(0 0 20px rgba(0,242,254,0.9)) drop-shadow(0 0 40px rgba(0,242,254,0.5))'

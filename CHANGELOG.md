@@ -4,6 +4,19 @@ All notable changes and architectural phases for this project are documented in 
 
 ---
 
+## [1.3.1] - 2026-10-03
+### Phase: Zero-Dependency SVG Logo & Asset Resolution Fix
+- **Feature**: Fixed broken crystal logo image placeholder on GitHub Pages caused by subpath routing.
+- **Files Created/Modified**:
+  - [CrystalLogo.tsx](file:///c:/Users/ansha/OneDrive/Desktop/candy%20crush/src/components/CrystalLogo.tsx): Created inline vector SVG component with gradient and blur filters, eliminating network path dependencies.
+  - [SplashScreen.tsx](file:///c:/Users/ansha/OneDrive/Desktop/candy%20crush/src/components/SplashScreen.tsx): Replaced broken `<img>` path with `<CrystalLogo>`.
+  - [HomeScreen.tsx](file:///c:/Users/ansha/OneDrive/Desktop/candy%20crush/src/components/HomeScreen.tsx): Replaced broken `<img>` path with `<CrystalLogo>`.
+  - [index.html](file:///c:/Users/ansha/OneDrive/Desktop/candy%20crush/index.html): Changed favicon link from `/crystal.svg` to relative `./crystal.svg`.
+- **Breaking Changes**: None.
+- **Notes**: Guarantees crystal logo renders immediately without 404 network failure.
+
+---
+
 ## [1.3.0] - 2026-10-03
 ### Phase: GitHub Deployment & Cloud Automation
 - **Feature**: Full deployment to GitHub repository (`marketerdaddy/crystal-quest-match3`) with automated GitHub Actions CI/CD to GitHub Pages.

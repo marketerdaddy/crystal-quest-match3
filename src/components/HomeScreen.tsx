@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useGame } from '../context/GameContext';
 import { getLevelConfig } from '../game/levels';
+import { CrystalLogo } from './CrystalLogo';
 import {
   Play,
   Map,
@@ -283,12 +284,10 @@ export const HomeScreen: React.FC = () => {
           />
 
           {/* Crystal */}
-          <img
-            src="/crystal.svg"
-            alt="Crystal Quest"
+          <CrystalLogo
             className="relative z-10"
+            size={100}
             style={{
-              width: 100, height: 100,
               animation: 'float 3.5s ease-in-out infinite',
               filter: 'drop-shadow(0 0 25px rgba(0,242,254,0.8)) drop-shadow(0 0 50px rgba(0,242,254,0.3))'
             }}
