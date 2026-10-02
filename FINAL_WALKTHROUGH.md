@@ -212,9 +212,12 @@ The game is designed to run seamlessly out of the box with zero required environ
 
 ---
 
-## 10. Deployment Notes
-- **Static Hosting**: The `dist/` folder contains pure static HTML, CSS, and JS assets deployable to Vercel, Netlify, Cloudflare Pages, or AWS S3/CloudFront.
-- **Node Server**: For full-stack deployment, run `node server/src/server.ts` or deploy as a Docker container using a Node.js 18 alpine image.
+## 10. Deployment & Live URLs
+- **GitHub Repository**: [https://github.com/marketerdaddy/crystal-quest-match3](https://github.com/marketerdaddy/crystal-quest-match3)
+- **Live Production URL (GitHub Pages)**: [https://marketerdaddy.github.io/crystal-quest-match3/](https://marketerdaddy.github.io/crystal-quest-match3/)
+- **Automated CI/CD**: Managed via `.github/workflows/deploy.yml` with GitHub Actions deploying Vite production builds on every push to `main`.
+- **Static Hosting**: The `dist/` folder contains pure static HTML, CSS, and JS assets deployable to GitHub Pages, Vercel, Netlify, or Cloudflare Pages.
+- **Node Server**: For full-stack deployment, run `npm run server` (`node server/src/server.ts`) or deploy as a Docker container using a Node.js 18/20 alpine image.
 - **PWA Ready**: Viewport meta tags, theme colors, and icons are configured for easy conversion into an installable Progressive Web App or Capacitor/Cordova mobile wrapper.
 
 ---

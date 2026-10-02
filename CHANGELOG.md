@@ -4,6 +4,23 @@ All notable changes and architectural phases for this project are documented in 
 
 ---
 
+## [1.3.0] - 2026-10-03
+### Phase: GitHub Deployment & Cloud Automation
+- **Feature**: Full deployment to GitHub repository (`marketerdaddy/crystal-quest-match3`) with automated GitHub Actions CI/CD to GitHub Pages.
+- **Files Created/Modified**:
+  - [.github/workflows/deploy.yml](file:///c:/Users/ansha/OneDrive/Desktop/candy%20crush/.github/workflows/deploy.yml): Automated Node.js 20 build and GitHub Pages deployment workflow.
+  - [.gitignore](file:///c:/Users/ansha/OneDrive/Desktop/candy%20crush/.gitignore): Configured exclusions for node_modules, build artifacts, logs, and system files.
+  - [vite.config.ts](file:///c:/Users/ansha/OneDrive/Desktop/candy%20crush/vite.config.ts): Added `base: './'` for seamless relative static asset resolution on custom subpath domains.
+  - [FINAL_WALKTHROUGH.md](file:///c:/Users/ansha/OneDrive/Desktop/candy%20crush/FINAL_WALKTHROUGH.md): Added live repository and GitHub Pages deployment URLs.
+- **Database/Storage**:
+  - Maintained client-side `localStorage` state persistence and graceful offline fallbacks for server APIs.
+- **API Changes**:
+  - Full client-side fallback verified for zero-dependency static hosting.
+- **Breaking Changes**: None.
+- **Notes**: Live deployment accessible at `https://marketerdaddy.github.io/crystal-quest-match3/`.
+
+---
+
 ## [1.2.0] - 2026-09-27
 ### Phase: Polish, Modal System & Visual Excellence
 - **Feature**: Redesigned UI modals, enhanced animations, and audio synthesizer integration.
